@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'default-violet': '#65558F',
+        'default-pink': '#F87171',
+        'default-yellow': '#F4AC45',
+        'default-grey': '#D9D9D9',
+        'card-violet': '#EADDFF',
+      },
+      fontFamily: {
+        'default-police': ['"Rum_Raisin"', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,4 +27,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Rum_Raisin } from "next/font/google";
 import "./globals.css";
+import MovieHeader from "@/components/header";
+import MovieFooter from "@/components/footer";
+
+
 
 const rumRaisin = Rum_Raisin({ weight: "400", subsets: ["latin"] });
 
@@ -16,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={rumRaisin.className}>{children}</body>
+      <body className={rumRaisin.className}>
+      <MovieHeader/>
+        {children}
+      <MovieFooter/>
+      </body>
     </html>
   );
 }
