@@ -1,8 +1,10 @@
+'use-client';
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaUserCircle } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+
 
 const MovieHeader = () => {
   return (
@@ -35,17 +37,10 @@ const MovieHeader = () => {
       </div>
 
       {/* Page Titles */}
-      <motion.div className="text-center mt-6"
-      initial={{ scale: 0 }}
-      animate={{ rotate: 180, scale: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 260,
-        damping: 20
-      }}>
+      <div className="text-center mt-6">
         <h1 className="text-9xl font-rum-raisin">Movie-Guesser</h1>
         <h2 className="text-5xl font-rum-raisin">Un film c&apos;est bien, un bon film c&apos;est mieux!</h2>
-      </motion.div>
+      </div>
     </header>
   );
 };
